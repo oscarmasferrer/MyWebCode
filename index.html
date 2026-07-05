@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tu Nombre — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <div class="logo"><span class="dot"></span> TU_NOMBRE</div>
+    <nav class="navlinks" id="navlinks">
+      <a href="index.html" class="active">Inicio</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <button class="navtoggle" id="navtoggle" aria-label="Abrir menú">☰</button>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <div>
+      <p class="eyebrow">PERFIL</p>
+      <h1>Hola, soy <span>Tu Nombre</span>.<br>Diseño y construyo cosas en pantalla.</h1>
+      <p class="lead">
+        Breve bio: cuéntanos a qué te dedicas, tu enfoque de trabajo y qué tipo de
+        proyectos te interesan. Dos o tres frases bastan — este espacio es para
+        que alguien entienda rápido quién eres y por qué contratarte.
+      </p>
+      <div class="cta-row">
+        <a href="proyectos.html" class="btn btn-primary">Ver proyectos</a>
+        <a href="contacto.html" class="btn btn-ghost">Contactar</a>
+      </div>
+    </div>
+
+    <div class="photo-frame">
+      <!-- Sustituye "assets/foto.jpg" por tu foto real -->
+      <img src="assets/foto.jpg" alt="Foto de Tu Nombre" onerror="this.style.display='none'">
+      <span class="corner tl"></span>
+      <span class="corner tr"></span>
+      <span class="corner bl"></span>
+      <span class="corner br"></span>
+      <span class="photo-status"><span class="dot" style="width:6px;height:6px;"></span> DISPONIBLE</span>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="skills">
+    <p class="eyebrow">APTITUDES</p>
+    <h2>Programas y herramientas</h2>
+    <div class="skills-grid">
+
+      <div class="skill-group">
+        <h3>DISEÑO</h3>
+        <div class="skill-item">
+          <div class="row"><span>Figma</span><span>90%</span></div>
+          <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="row"><span>Photoshop</span><span>75%</span></div>
+          <div class="bar"><div class="bar-fill" style="width:75%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="row"><span>Illustrator</span><span>70%</span></div>
+          <div class="bar"><div class="bar-fill" style="width:70%"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>DESARROLLO</h3>
+        <div class="skill-item">
+          <div class="row"><span>HTML / CSS</span><span>85%</span></div>
+          <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="row"><span>JavaScript</span><span>65%</span></div>
+          <div class="bar"><div class="bar-fill" style="width:65%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="row"><span>Python</span><span>60%</span></div>
+          <div class="bar"><div class="bar-fill" style="width:60%"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>OTRAS APTITUDES</h3>
+        <div class="skill-item">
+          <div class="row"><span>Trabajo en equipo</span><span>95%</span></div>
+          <div class="bar"><div class="bar-fill" style="width:95%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="row"><span>Gestión de proyectos</span><span>80%</span></div>
+          <div class="bar"><div class="bar-fill" style="width:80%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="row"><span>Inglés</span><span>90%</span></div>
+          <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site wrap">
+  <span>© 2026 Tu Nombre</span>
+  <span>Hecho con HTML / CSS</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
