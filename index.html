@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tu Nombre — Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tu Nombre — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -15,11 +15,11 @@
   <div class="wrap nav">
     <div class="logo"><span class="dot"></span> TU_NOMBRE</div>
     <nav class="navlinks" id="navlinks">
-      <a href="index.html" class="active">Inicio</a>
-      <a href="proyectos.html">Proyectos</a>
-      <a href="contacto.html">Contacto</a>
+      <a href="index.html" class="active" data-i18n data-es="Inicio" data-en="Home">Inicio</a>
+      <a href="proyectos.html" data-i18n data-es="Proyectos" data-en="Projects">Proyectos</a>
+      <a href="contacto.html" data-i18n data-es="Contacto" data-en="Contact">Contacto</a>
     </nav>
-        <div class="lang-switch">
+    <div class="lang-switch">
       <button class="lang-btn" data-lang="es">ES</button>
       <button class="lang-btn" data-lang="en">EN</button>
     </div>
@@ -31,15 +31,22 @@
 
   <section class="hero">
     <div>
-      <p class="eyebrow">PERFIL</p>
-      <h1>Hola, soy <span>Òscar</span>.<br>Diseño y construyo cosas en pantalla.</h1>
-      <p class="lead">
-        ¡Hola! Soy Òscar Masferrer, Technical VFX Artist especializado en la creación de efectos
-        visuales en Unreal Engine, con 5 años de experiencia y tres juegos a mis espaldas.
+      <p class="eyebrow" data-i18n data-es="PERFIL" data-en="PROFILE">PERFIL</p>
+      <h1>
+        <span data-i18n data-es="Hola, soy" data-en="Hi, I'm">Hola, soy</span>
+        <span class="hl">Tu Nombre</span>.<br>
+        <span data-i18n data-es="Diseño y construyo cosas en pantalla." data-en="I design and build things on screen.">Diseño y construyo cosas en pantalla.</span>
+      </h1>
+      <p class="lead" data-i18n
+         data-es="Breve bio: cuéntanos a qué te dedicas, tu enfoque de trabajo y qué tipo de proyectos te interesan. Dos o tres frases bastan — este espacio es para que alguien entienda rápido quién eres y por qué contratarte."
+         data-en="Short bio: tell people what you do, your way of working, and the kind of projects you're into. Two or three sentences are enough — this space is so someone quickly understands who you are and why they should hire you.">
+        Breve bio: cuéntanos a qué te dedicas, tu enfoque de trabajo y qué tipo de
+        proyectos te interesan. Dos o tres frases bastan — este espacio es para
+        que alguien entienda rápido quién eres y por qué contratarte.
       </p>
       <div class="cta-row">
-        <a href="proyectos.html" class="btn btn-primary">Ver proyectos</a>
-        <a href="contacto.html" class="btn btn-ghost">Contactar</a>
+        <a href="proyectos.html" class="btn btn-primary" data-i18n data-es="Ver proyectos" data-en="View projects">Ver proyectos</a>
+        <a href="contacto.html" class="btn btn-ghost" data-i18n data-es="Contactar" data-en="Contact">Contactar</a>
       </div>
     </div>
 
@@ -50,75 +57,79 @@
       <span class="corner tr"></span>
       <span class="corner bl"></span>
       <span class="corner br"></span>
-      <span class="photo-status"><span class="dot" style="width:6px;height:6px;"></span> DISPONIBLE</span>
+      <span class="photo-status"><span class="dot" style="width:6px;height:6px;"></span> <span data-i18n data-es="DISPONIBLE" data-en="AVAILABLE">DISPONIBLE</span></span>
     </div>
   </section>
 
   <hr class="divider">
 
   <section id="skills">
-    <p class="eyebrow">APTITUDES</p>
-    <h2>Programas y herramientas</h2>
-<div class="skill-groups">
+    <p class="eyebrow" data-i18n data-es="APTITUDES" data-en="SKILLS">APTITUDES</p>
+    <h2 data-i18n data-es="Programas y herramientas" data-en="Tools and software">Programas y herramientas</h2>
+    <div class="skill-groups">
 
-  <div class="skill-group">
-    <h3>DISEÑO</h3>
-    <div class="skill-row">
-      <div class="skill-chip">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma" class="skill-icon">
-        <span>Figma</span>
+      <div class="skill-group">
+        <h3 data-i18n data-es="DISEÑO" data-en="DESIGN">DISEÑO</h3>
+        <div class="skill-row">
+          <div class="skill-chip">
+            <i class="devicon-figma-plain"></i>
+            <span>Figma</span>
+          </div>
+          <div class="skill-chip">
+            <i class="devicon-photoshop-plain"></i>
+            <span>Photoshop</span>
+          </div>
+          <div class="skill-chip">
+            <i class="devicon-illustrator-plain"></i>
+            <span>Illustrator</span>
+          </div>
+        </div>
       </div>
-      <div class="skill-chip">
-        <i class="devicon-photoshop-plain"></i>
-        <span>Photoshop</span>
-      </div>
-      <div class="skill-chip">
-        <i class="devicon-illustrator-plain"></i>
-        <span>Illustrator</span>
-      </div>
-    </div>
-  </div>
 
-  <div class="skill-group">
-    <h3>DESARROLLO</h3>
-    <div class="skill-row">
-      <div class="skill-chip">
-        <i class="devicon-html5-plain"></i>
-        <span>HTML / CSS</span>
+      <div class="skill-group">
+        <h3 data-i18n data-es="DESARROLLO" data-en="DEVELOPMENT">DESARROLLO</h3>
+        <div class="skill-row">
+          <div class="skill-chip">
+            <i class="devicon-html5-plain"></i>
+            <span>HTML / CSS</span>
+          </div>
+          <div class="skill-chip">
+            <i class="devicon-javascript-plain"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-chip">
+            <i class="devicon-python-plain"></i>
+            <span>Python</span>
+          </div>
+        </div>
       </div>
-      <div class="skill-chip">
-        <i class="devicon-javascript-plain"></i>
-        <span>JavaScript</span>
-      </div>
-      <div class="skill-chip">
-        <i class="devicon-python-plain"></i>
-        <span>Python</span>
-      </div>
-    </div>
-  </div>
 
-  <div class="skill-group">
-    <h3>OTRAS APTITUDES</h3>
-    <div class="skill-row">
-      <div class="skill-chip skill-chip--soft">
-        <span class="initials">TE</span>
-        <span>Trabajo en equipo</span>
+      <div class="skill-group">
+        <h3 data-i18n data-es="OTRAS APTITUDES" data-en="OTHER SKILLS">OTRAS APTITUDES</h3>
+        <div class="skill-row">
+          <div class="skill-chip skill-chip--soft">
+            <span class="initials">TE</span>
+            <span data-i18n data-es="Trabajo en equipo" data-en="Teamwork">Trabajo en equipo</span>
+          </div>
+          <div class="skill-chip skill-chip--soft">
+            <span class="initials">GP</span>
+            <span data-i18n data-es="Gestión de proyectos" data-en="Project management">Gestión de proyectos</span>
+          </div>
+          <div class="skill-chip skill-chip--soft">
+            <span class="initials">EN</span>
+            <span data-i18n data-es="Inglés" data-en="English">Inglés</span>
+          </div>
+        </div>
       </div>
-      <div class="skill-chip skill-chip--soft">
-        <span class="initials">GP</span>
-        <span>Gestión de proyectos</span>
-      </div>
-      <div class="skill-chip skill-chip--soft">
-        <span class="initials">EN</span>
-        <span>Inglés</span>
-      </div>
+
     </div>
-  </div>
+  </section>
+
 </main>
 
 <footer class="site wrap">
   <span>© 2026 Tu Nombre</span>
-  <span>Hecho con HTML / CSS</span>
+  <span data-i18n data-es="Hecho con HTML / CSS" data-en="Made with HTML / CSS">Hecho con HTML / CSS</span>
 </footer>
 
 <script src="script.js"></script>

@@ -143,7 +143,7 @@ header.site {
   line-height: 1.08;
   margin-bottom: 1.2rem;
 }
-.hero h1 span { color: var(--neon); }
+.hero h1 span.hl { color: var(--neon); }
 .hero p.lead {
   color: var(--text-secondary);
   font-size: 1.08rem;
@@ -197,6 +197,14 @@ header.site {
 }
 
 /* -------------------- secciones generales -------------------- */
+section { padding: 3.5rem 0; }
+section h2 {
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  margin-bottom: 2rem;
+}
+.divider { border: none; border-top: 1px solid var(--navy-700); }
+
 /* -------------------- skills -------------------- */
 .skill-groups {
   display: flex;
@@ -225,10 +233,11 @@ header.site {
   transition: border-color 0.2s, transform 0.2s;
 }
 .skill-chip:hover { border-color: var(--neon); transform: translateY(-2px); }
-.skill-chip .skill-icon {
+.skill-chip i {
+  font-size: 1.5rem;
   width: 1.5rem;
-  height: 1.5rem;
-  object-fit: contain;
+  text-align: center;
+  color: var(--neon);
 }
 .skill-chip span:last-child {
   font-family: var(--font-mono);
@@ -250,7 +259,6 @@ header.site {
 }
 
 /* -------------------- proyectos -------------------- */
-/* -------------------- proyectos -------------------- */
 .projects-list {
   display: flex;
   flex-direction: column;
@@ -259,35 +267,31 @@ header.site {
 
 .project-card {
   background: var(--navy-800);
-  border: 1px solid var(--navy-700);
+  border: 1px solid transparent;
   overflow: hidden;
   transition: border-color 0.2s;
 }
 .project-card:hover { border-color: var(--neon); }
 .project-card[open] { border-color: var(--neon); }
 
+/* cabecera clicable (rectángulo con imagen + texto superpuesto) */
 .project-summary {
   list-style: none;
   cursor: pointer;
   position: relative;
   display: block;
-  min-height: 200px;
+  height: 220px;
+  overflow: hidden;
 }
 .project-summary::-webkit-details-marker { display: none; }
 
 .project-image {
-  width: 100%;
-  height: 220px;
+  position: absolute;
+  inset: -1px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
   object-fit: cover;
   object-position: top;
-  display: block;
-  filter: brightness(0.55);
-  transition: filter 0.3s;
-}
-.project-image-bot {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
   display: block;
   filter: brightness(0.55);
   transition: filter 0.3s;
@@ -296,15 +300,12 @@ header.site {
 .project-card[open] .project-image {
   filter: brightness(1);
 }
-.project-summary:hover .project-image-bot,
-.project-card[open] .project-image-bot {
-  filter: brightness(1);
-}
 
 .project-overlay {
   position: absolute;
   left: 0; right: 0; bottom: 0;
   padding: 1.4rem 1.6rem;
+  background: linear-gradient(to top, rgba(6, 10, 26, 0.92), rgba(6, 10, 26, 0.1) 80%);
 }
 .project-overlay .tag {
   font-family: var(--font-mono);
@@ -333,6 +334,7 @@ header.site {
 }
 .project-card[open] .expand-icon { transform: rotate(45deg); }
 
+/* contenido desplegado */
 .project-body { padding: 1.6rem; }
 .project-body p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1rem; }
 .stack { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1rem; }
@@ -345,6 +347,7 @@ header.site {
 }
 .project-body a.view { font-family: var(--font-mono); font-size: 0.82rem; color: var(--neon); }
 .project-body a.view:hover { color: var(--neon-dim); }
+
 
 /* -------------------- contacto -------------------- */
 .contact-block {

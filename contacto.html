@@ -14,19 +14,25 @@
   <div class="wrap nav">
     <div class="logo"><span class="dot"></span> TU_NOMBRE</div>
     <nav class="navlinks" id="navlinks">
-      <a href="index.html">Inicio</a>
-      <a href="proyectos.html">Proyectos</a>
-      <a href="contacto.html" class="active">Contacto</a>
+      <a href="index.html" data-i18n data-es="Inicio" data-en="Home">Inicio</a>
+      <a href="proyectos.html" data-i18n data-es="Proyectos" data-en="Projects">Proyectos</a>
+      <a href="contacto.html" class="active" data-i18n data-es="Contacto" data-en="Contact">Contacto</a>
     </nav>
+    <div class="lang-switch">
+      <button class="lang-btn" data-lang="es">ES</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
     <button class="navtoggle" id="navtoggle" aria-label="Abrir menú">☰</button>
   </div>
 </header>
 
 <main class="wrap">
   <section>
-    <p class="eyebrow">CONTACTO</p>
-    <h2>Hablemos</h2>
-    <p style="color:var(--text-secondary); max-width:50ch; margin-bottom:1rem;">
+    <p class="eyebrow" data-i18n data-es="CONTACTO" data-en="CONTACT">CONTACTO</p>
+    <h2 data-i18n data-es="Hablemos" data-en="Let's talk">Hablemos</h2>
+    <p style="color:var(--text-secondary); max-width:50ch; margin-bottom:1rem;" data-i18n
+       data-es="¿Tienes un proyecto en mente o quieres saber más sobre mi trabajo? Escríbeme por cualquiera de estos canales."
+       data-en="Have a project in mind, or want to know more about my work? Reach out through any of these channels.">
       ¿Tienes un proyecto en mente o quieres saber más sobre mi trabajo?
       Escríbeme por cualquiera de estos canales.
     </p>
@@ -45,7 +51,7 @@
         <a href="https://github.com/tu-usuario" target="_blank" rel="noopener">github.com/tu-usuario</a>
       </div>
       <div class="contact-card">
-        <p class="eyebrow">UBICACIÓN</p>
+        <p class="eyebrow" data-i18n data-es="UBICACIÓN" data-en="LOCATION">UBICACIÓN</p>
         <p class="value">Tu Ciudad, País</p>
       </div>
     </div>
@@ -54,7 +60,7 @@
 
 <footer class="site wrap">
   <span>© 2026 Tu Nombre</span>
-  <span>Hecho con HTML / CSS</span>
+  <span data-i18n data-es="Hecho con HTML / CSS" data-en="Made with HTML / CSS">Hecho con HTML / CSS</span>
 </footer>
 
 <script src="script.js"></script>
